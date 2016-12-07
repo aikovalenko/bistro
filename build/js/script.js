@@ -15,6 +15,20 @@ $(document).ready(function() {
         itemSelector: '.grid-item'
     });
 
+    $(".slider1").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
+
     $.each($('.title--bottom'), function(i, el) {
 
         var inner = $(this).find("title__inner");
