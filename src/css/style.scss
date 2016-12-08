@@ -54,20 +54,36 @@ select {
   border-right: 13px solid #000;
   border-bottom: 8px solid transparent;
 }
+aside.menu {
+  flex: 0 0 240px;
+  margin-top: .4%;
+  margin-right: 5px;
+  .grid-item {
+    margin-bottom: 10px;
+  }
+}
+
 .masonry {
   margin-top: 20px;
   .wrapper {
     padding-left: 5px;
     padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
+.grid-wrapper {
+  flex: 1;
+}
 .grid {
-  max-width: 1150px;
+  .grid-item {
+    margin: 5px;
+  }
 }
 .grid-item {
   box-sizing: border-box;
   //margin: 5px;
-  margin: .4%;
+  //margin: .4%;
   float: left;
   overflow: hidden;
   a {
@@ -169,32 +185,43 @@ select {
   width: 10px;
 }
 @media screen and (max-width: 1160px) {
-  .grid-item {
-    width: 32.3333%;
-    margin: .5%;
+  .grid-wrapper {
+    .grid-item {
+      width: 49%;
+      margin: .5%;
+    }
+    .grid-sizer {
+      width: 50%;
+    }
   }
-  .grid-sizer {
-    width: 33.3333%;
-  }
+
 }
 
 @media screen and (max-width: 760px) {
-  .grid-item {
-    width: 49%;
-    margin: .5%;
+  .grid-wrapper {
+    .grid-item {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    .grid-sizer {
+      width: 100%;
+    }
   }
-  .grid-sizer {
-    width: 50%;
+  aside.menu {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 600px) {
-  .grid-item {
+  aside.menu {
+    flex: auto;
     width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
+    .grid-item {
+      width: 50%;
+    }
   }
-  .grid-sizer {
-    width: 100%;
+  .grid-wrapper {
+    flex: auto;
   }
 }
 
