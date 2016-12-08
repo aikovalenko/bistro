@@ -27,7 +27,7 @@ $(document).ready(function() {
             }
         }
     });
-    $(".process__inner").owlCarousel({
+    $(".slider-with-arrows").owlCarousel({
         loop: false,
         nav: true,
         dots: false,
