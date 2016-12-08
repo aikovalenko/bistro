@@ -17,7 +17,6 @@ $(document).ready(function() {
 
     $(".slider1").owlCarousel({
         loop: true,
-        margin: 10,
         nav: false,
         dots: true,
         autoplay: true,
@@ -25,6 +24,37 @@ $(document).ready(function() {
         responsive:{
             0:{
                 items:1
+            }
+        }
+    });
+    $(".process__inner").owlCarousel({
+        loop: false,
+        nav: true,
+        dots: false,
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        responsive:{
+            0:{
+                items:1
+            }
+        },
+        afterAction: function(){
+            if ( this.itemsAmount > this.visibleItems.length ) {
+                $('.next').show();
+                $('.prev').show();
+
+                $('.next').removeClass('disabled');
+                $('.prev').removeClass('disabled');
+                if ( this.currentItem == 0 ) {
+                    $('.prev').addClass('disabled');
+                }
+                if ( this.currentItem == this.maximumItem ) {
+                    $('.next').addClass('disabled');
+                }
+
+            } else {
+                $('.next').hide();
+                $('.prev').hide();
             }
         }
     });

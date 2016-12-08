@@ -270,6 +270,26 @@ select {
     }
   }
 }
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 70px;
+  height: 70px;
+  background-color: #e3e3e3;
+  transition: all .2s ease;
+}
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}
+.disabled {
+  z-index: -1;
+  opacity: 0;
+  transition: all .2s ease;
+}
 .important {
   position: relative;
   padding-top: 100px;
@@ -321,4 +341,93 @@ select {
   height: 34px;
   background-image: url("../img/arrow-down.png");
   background-repeat: no-repeat;
+}
+.process {
+  background-color: #000;
+  position: relative;
+  .head {
+    margin: 0;
+    font-family: "alsschlange", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+.process__inner {
+  padding-top: 50px;
+}
+.process__scheme {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 170px;
+  transition: all .2s ease;
+  .line {
+    width: 100%;
+    margin-top: 100px;
+    transition: all .2s ease;
+  }
+  .image {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 159px;
+    margin-right: 90px;
+    margin-left: 90px;
+    transition: all .2s ease;
+    &:before {
+      position: absolute;
+      top: 50%;
+      right: -140px;
+      margin-top: -30px;
+      content: "";
+      display: block;
+      width: 89px;
+      height: 21px;
+      background-image: url("../img/arrow-process.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all .2s ease;
+    }
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .title {
+    margin-top: 15px;
+    font-family: "alsschlange", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16.5px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .process__scheme {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    .line {
+      width: 100%;
+      margin-top: 50px;
+    }
+    .image {
+      width: 120px;
+      margin-right: 50px;
+      margin-left: 50px;
+      &:before {
+        right: -80px;
+        margin-top: -30px;
+        width: 65px;
+        height: 15px;
+      }
+    }
+  }
 }
