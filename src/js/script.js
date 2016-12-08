@@ -1,3 +1,15 @@
+function ratioPromo() {
+    var windowWidth = $( window ).width();
+
+    var promo = $( ".promo__inner" );
+    var ratio = 752/1280;
+    if (windowWidth > 1060) {
+        promo.css('height', windowWidth * ratio);
+    }
+
+}
+
+
 $(document).ready(function() {
 
     $('.dropdown').hover(function() {
@@ -59,9 +71,15 @@ $(document).ready(function() {
         }
     });
 
-    $.each($('.title--bottom'), function(i, el) {
+    // $.each($('.title--bottom'), function(i, el) {
+    //
+    //     var inner = $(this).find("title__inner");
+    //
+    // });
 
-        var inner = $(this).find("title__inner");
+    ratioPromo();
+});
 
-    });
+$(window).resize(function() {
+    ratioPromo();
 });
