@@ -343,7 +343,7 @@ select {
   background-repeat: no-repeat;
 }
 .process {
-  background-color: #000;
+  background-color: #252525;
   position: relative;
   .head {
     margin: 0;
@@ -429,5 +429,96 @@ select {
         height: 15px;
       }
     }
+  }
+}
+.tools {
+  position: relative;
+}
+.objects {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  display: table;
+  position: absolute;
+  top: -30px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid $color-red;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  font-family: "alsschlange", "Arial", sans-serif;
+  opacity: 0;
+  z-index: -1;
+  transition: all .2s ease;
+}
+.object {
+  position: absolute;
+  &:hover {
+    .info {
+      opacity: 1;
+      z-index: 9999;
+      transition: all .2s ease;
+    }
+  }
+}
+.info__inner {
+  display: table-cell;
+  vertical-align: middle;
+  //padding-left: 43px;
+  //padding-right: 43px;
+  margin: 0 auto;
+}
+.info__head {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.info__desc {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.object-m {
+  top: 4%;
+  left: 16.7%;
+}
+.object-a {
+  top: 43%;
+  left: 16.7%;
+}
+.object-i {
+  top: 37%;
+  left: 44.1%;
+}
+.letter {
+  display: table;
+  width: 100px;
+  line-height: 94px;
+  border-radius: 50%;
+  border: 3px solid $color-red;
+  font-family: "alsschlange", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  color: $color-red;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .letter {
+    width: 8.5vw;
+    line-height: 8vw;
+    font-size: 6vw;
   }
 }

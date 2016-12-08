@@ -1,20 +1,20 @@
-@include fontFace('ArticulatCF','/fonts/articulatcf-heavy', 600);
-@include fontFace('ArticulatCF','/fonts/articulatcf-bold', 500);
-@include fontFace('ArticulatCF','/fonts/articulatcf-medium', 400);
-@include fontFace('ArticulatCF','/fonts/articulatcf-text', 300);
-@include fontFace('ArticulatCF','/fonts/articulatcf-light', 200);
-@include fontFace('ArticulatCF','/fonts/articulatcf-thin', 100);
+@include fontFace('ArticulatCF','../fonts/articulatcf-heavy', 600);
+@include fontFace('ArticulatCF','../fonts/articulatcf-bold', 500);
+@include fontFace('ArticulatCF','../fonts/articulatcf-medium', 400);
+@include fontFace('ArticulatCF','../fonts/articulatcf-text', 300);
+@include fontFace('ArticulatCF','../fonts/articulatcf-light', 200);
+@include fontFace('ArticulatCF','../fonts/articulatcf-thin', 100);
 
-@include fontFace('Bitter','/fonts/bitter-bold', 500);
+@include fontFace('Bitter','../fonts/bitter-bold', 500);
 
-@include fontFace('alsschlange','/fonts/alsschlangeblack', 600);
-@include fontFace('alsschlange','/fonts/alsschlangebold', 500);
-@include fontFace('alsschlange','/fonts/alsschlangeregular', 400);
-@include fontFace('alsschlange','/fonts/alsschlangeslablight', 300);
-@include fontFace('alsschlange','/fonts/alsschlangeslabthin', 200);
+@include fontFace('alsschlange','../fonts/alsschlangeblack', 600);
+@include fontFace('alsschlange','../fonts/alsschlangebold', 500);
+@include fontFace('alsschlange','../fonts/alsschlangeregular', 400);
+@include fontFace('alsschlange','../fonts/alsschlangeslablight', 300);
+@include fontFace('alsschlange','../fonts/alsschlangeslabthin', 200);
 
 
-@include fontFace('icomoon','/fonts/icomoon', "normal");
+@include fontFace('icomoon','../fonts/icomoon', "normal");
 
 [class^="icon-"], [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */

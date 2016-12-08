@@ -61,6 +61,10 @@
       text-decoration: none;
       text-align: center;
       color: #fff;
+      .icon {
+        display: table-cell;
+        vertical-align: middle;
+      }
       &:hover {
         transition: all .2s ease;
         background-color: $color-red;
@@ -160,13 +164,10 @@
   .social-buttons {
     .social-btn {
       a {
+        display: table;
         background-color: #fff;
         color: $color-red;
         transition: all .2s ease;
-        i {
-          display: table-cell;
-          vertical-align: middle;
-        }
         &:hover {
           transition: all .2s ease;
           color: #fff;
