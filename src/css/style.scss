@@ -1085,7 +1085,10 @@ aside.menu {
   position: relative;
   .social-buttons {
     position: absolute;
-    top: 15px;
+    bottom: 20px;
     right: 65px;
+  }
+  .gm-style-cc {
+    display: none;
   }
 }
