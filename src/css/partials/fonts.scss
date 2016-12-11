@@ -31,6 +31,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+	content: "\e947";
+}
+.icon-mobile:before {
+	content: "\e958";
+}
+.icon-mail:before {
+	content: "\ea83";
+}
 .icon-facebook:before {
 	content: "\ea90";
 }
@@ -40,3 +49,4 @@
 .icon-vimeo:before {
 	content: "\eaa0";
 }
+
