@@ -70,6 +70,18 @@ $(document).ready(function() {
             }
         }
     });
+    $(".slider-with-arrows-always").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
 
     // $.each($('.title--bottom'), function(i, el) {
     //
