@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <meta name='format-detection' content='telephone=no'>
+    <title></title>
+    <link rel='stylesheet' href='css/libs.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href='img/favicon.ico' rel='shortcut icon'>
+  </head>
+  <body class="contacts-page header--black">
+    <header class="header">
+        <div class="header__top clearfix">
+            <div class="wrapper">
+                <div class="header__top__languages">
+                    <ul class="lang-switcher">
+                        <li class="lang active">
+                            <a href="" title="Hungarian">Hu</a>
+                        </li>
+                        <li class="lang">
+                            <a href="" title="English">En</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__top__social">
+                    <ul class="social-buttons">
+                        <li class="social-btn">
+                            <a href="" title="Facebook">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-btn">
+                            <a href="" title="Instagram">
+                                <i class="icon icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social-btn">
+                            <a href="" title="Vimeo">
+                                <i class="icon icon-vimeo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle clearfix">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="" title=""><img width="216" src="img/logo.png"></a>
+                </div>
+                <nav class="nav">
+                    <div class="dropdown">
+                        <a href="" class="nav-item dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="RÓLUNK">
+                            RÓLUNK
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-item" href="" title="MUNKÁINK">MUNKÁINK</a>
+                    <a class="nav-item" href="" title="SAJTÓ">SAJTÓ</a>
+                    <a class="nav-item" href="" title="KAPCSOLAT">KAPCSOLAT</a>
+                    <div class="dropdown">
+                        <a href="" class="nav-item dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            ATL
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-item" href="" title="EVENT">EVENT</a>
+                    <a class="nav-item" href="" title="INTEGRÁLT">INTEGRÁLT</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="wrapper">
+                <a class="btn--back" href="" title=""><i class="icon-triangle"></i><span>VISSZA</span></a>
+            </div>
+        </div>
+    </header>
+        <section class="contacts">
+            <div class="wrapper">
+                <div class="contacts__inner">
+                    <h2>Készen állsz a közös munkára? </h2>
+                    <h3>lépj velünk kapcsoLatba! </h3>
+                    <ul class="contacts__list">
+                        <li>
+                            <div class="contacts__list__item">
+                                <i class="icon icon-location"></i> <span>Budapest, 1026 Gábor Áron utca 28.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contacts__list__item">
+                                <i class="icon icon-mail"></i> <span>info@bistroreklam.hu</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contacts__list__item">
+                                <i class="icon icon-mobile"></i> <span>new business: +36 1 798 95 40</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div id="map" style="height: 375px; width: 100%;"></div>
+            <ul class="social-buttons">
+                <li class="social-btn">
+                    <a href="" title="Facebook">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-btn">
+                    <a href="" title="Instagram">
+                        <i class="icon icon-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-btn">
+                    <a href="" title="Vimeo">
+                        <i class="icon icon-vimeo"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__inner">
+                © Bistro Reklámügynökség  -  2016
+            </div>
+        </div>
+    </footer>
+    
+    <script src='js/libs.js'></script>
+    <script src='js/script.js'></script>
+    <script>
+        function initMap() {
+            var place = {lat: 47.517768, lng: 19.006232};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: place,
+                scrollwheel: false,
+                disableDefaultUI: true,
+                zoomControl: true,
+                zoomControlOptions: {
+                    position: google.maps.ControlPosition.LEFT_CENTER
+                },
+                //https://snazzymaps.com/style/38/shades-of-grey
+                styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+            });
+            var marker = new google.maps.Marker({
+                position: place,
+                icon: 'img/pin.png',
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRYh2oLHF1hSUirkoK3HrLVMTtV9GO-Hc&callback=initMap" async defer></script>
+  </body>
+</html>
